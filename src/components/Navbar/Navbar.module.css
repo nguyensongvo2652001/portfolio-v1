@@ -1,12 +1,14 @@
 .navbar {
   background-color: var(--dark-blue);
   display: flex;
-  padding: 4rem;
+  padding: 4rem 4rem 0 0;
   gap: 4.8rem;
   position: fixed;
   top: 0;
   width: 100%;
   justify-content: flex-end;
+  list-style: none;
+  height: fit-content;
 }
 
 .navbar__link {

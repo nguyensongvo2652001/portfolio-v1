@@ -1,6 +1,6 @@
 .App {
   display: flex;
   flex-direction: column;
+  gap: 3.6rem;
   background-color: var(--dark-blue);
-  gap: 6.4rem;
 }

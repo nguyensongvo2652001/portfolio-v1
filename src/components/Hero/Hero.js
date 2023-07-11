@@ -7,7 +7,7 @@ import linkedinlogo from "../../assets/linkedinlogo.png";
 const Hero = (props) => {
   const { elementRef, aboutMeRef } = props;
 
-  const scrollToAboutMeSection = () => {
+  const scrollIntoAboutMeSection = () => {
     aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -63,7 +63,7 @@ const Hero = (props) => {
         <li className={classes.hero__buttonContainer}>
           <button
             className={`${classes.hero__mainButton} ${classes.hero__button}`}
-            onClick={scrollToAboutMeSection}
+            onClick={scrollIntoAboutMeSection}
           >
             More about me
           </button>
