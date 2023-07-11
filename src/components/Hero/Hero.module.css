@@ -18,6 +18,10 @@
   color: var(--white-color);
 }
 
+.hero__jobTitle {
+  color: var(--light-purple);
+}
+
 .hero__subInfo {
   color: var(--transparent-grey);
 }
