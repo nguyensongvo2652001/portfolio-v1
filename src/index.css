@@ -7,6 +7,12 @@
   --shopee-orange: #ee4d2d;
   --very-dark-blue: #2a2a38;
   --transparent-grey: rgba(255, 255, 255, 0.5);
+
+  --section-title-font-size: 6.2rem;
+  --section-title-padding: 0 0 0 2.4rem;
+  --section-title-margin-bottom: 4.8rem;
+
+  --small-navbar-logo-size: 6rem;
 }
 
 * {
@@ -22,4 +28,28 @@ html {
   font-size: 62.5%;
   font-family: "Urbanist", sans-serif;
   position: relative;
+}
+
+@media (max-width: 1250px) {
+  :root {
+    --section-title-font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --section-title-font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 850px) {
+  :root {
+    --section-title-font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --small-navbar-logo-size: 4rem;
+  }
 }

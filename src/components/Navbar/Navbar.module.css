@@ -1,14 +1,18 @@
-.navbar {
+.navbar__container {
   background-color: var(--dark-blue);
-  display: flex;
-  padding: 4rem 4rem 0 0;
-  gap: 4.8rem;
   position: fixed;
   top: 0;
   width: 100%;
-  justify-content: flex-end;
-  list-style: none;
   height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem 4rem 0 0;
+}
+
+.navbar__elements {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
 }
 
 .navbar__link {
@@ -23,4 +27,26 @@
 
 .navbar__link:hover {
   color: var(--light-blue);
+}
+
+.navbar__smallNavIconContainer {
+  display: none;
+  position: fixed;
+}
+
+.navbar__smallNavIconContainer ion-icon {
+  color: var(--white-color);
+  width: var(--small-navbar-logo-size);
+  height: var(--small-navbar-logo-size);
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navbar__smallNavIconContainer {
+    display: block;
+  }
+
+  .navbar__elements {
+    display: none;
+  }
 }
