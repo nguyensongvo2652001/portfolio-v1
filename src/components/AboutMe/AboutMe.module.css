@@ -83,3 +83,21 @@
     width: 0%;
   }
 }
+
+@media (max-width: 400px) {
+  .aboutMe__container {
+    height: fit-content;
+  }
+
+  .aboutMe__textbox {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutMe__textbox {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2.4rem 3.2rem 0 2.4rem;
+  }
+}

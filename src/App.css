@@ -7,8 +7,8 @@
 .App {
   display: flex;
   flex-direction: column;
-  gap: 3.6rem;
   background-color: var(--dark-blue);
+  height: 100vh;
 }
 
 @media (max-width: 1250px) {
@@ -20,12 +20,6 @@
 @media (max-width: 1000px) {
   :root {
     --section-title-font-size: 4.4rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .App {
-    gap: 2.4rem;
   }
 }
 

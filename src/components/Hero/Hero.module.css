@@ -3,10 +3,11 @@
 }
 
 .hero__container {
-  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   background-color: var(--dark-blue);
   padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .hero__textBox {
@@ -157,6 +158,12 @@
     width: 2.4rem;
   }
 
+  .hero__buttons,
+  .hero__links {
+    justify-content: flex-start;
+    padding-left: var(--hero-content-padding);
+  }
+
   .hero__button,
   .hero__button:link,
   .hero__button:visited {
@@ -166,7 +173,7 @@
 
 @media (max-width: 600px) {
   :root {
-    --hero-content-padding: 5%;
+    --hero-content-padding: 10%;
   }
 
   .hero__textBox {
@@ -175,5 +182,42 @@
 
   .hero__intro {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --hero-content-padding: 6%;
+  }
+
+  .hero__textBox {
+    font-size: 1.6rem;
+  }
+
+  .hero__intro {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__textBox {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero__textBox {
+    font-size: 1.2rem;
+  }
+
+  .hero__intro {
+    font-size: 1.2rem;
+  }
+
+  .hero__button,
+  .hero__button:link,
+  .hero__button:visited {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
   }
 }
