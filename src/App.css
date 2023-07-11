@@ -4,3 +4,9 @@
   gap: 3.6rem;
   background-color: var(--dark-blue);
 }
+
+@media (max-width: 900px) {
+  .App {
+    gap: 2.4rem;
+  }
+}
