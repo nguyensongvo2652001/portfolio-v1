@@ -5,7 +5,11 @@ import facebooklogo from "../../assets/facebooklogo.png";
 import linkedinlogo from "../../assets/linkedinlogo.png";
 
 const Hero = (props) => {
-  const { elementRef } = props;
+  const { elementRef, aboutMeRef } = props;
+
+  const scrollToAboutMeSection = () => {
+    aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className={classes.hero__container} ref={elementRef}>
@@ -59,6 +63,7 @@ const Hero = (props) => {
         <li className={classes.hero__buttonContainer}>
           <button
             className={`${classes.hero__mainButton} ${classes.hero__button}`}
+            onClick={scrollToAboutMeSection}
           >
             More about me
           </button>

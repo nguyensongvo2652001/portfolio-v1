@@ -2,9 +2,11 @@ import { useRef } from "react";
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   const heroRef = useRef();
+  const aboutMeRef = useRef();
 
   const navbarElements = [
     {
@@ -13,7 +15,7 @@ function App() {
     },
     {
       text: "About",
-      elementRef: heroRef,
+      elementRef: aboutMeRef,
     },
     {
       text: "Skills",
@@ -36,7 +38,8 @@ function App() {
   return (
     <div className="App">
       <Navbar elements={navbarElements} />
-      <Hero elementRef={heroRef} />
+      <Hero elementRef={heroRef} aboutMeRef={aboutMeRef} />
+      <AboutMe elementRef={aboutMeRef} />
     </div>
   );
 }
