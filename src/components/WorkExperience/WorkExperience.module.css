@@ -1,0 +1,71 @@
+.workExperience__container {
+  background-color: var(--dark-blue);
+  padding-bottom: 6.4rem;
+}
+
+.workExperience__number {
+  color: var(--transparent-grey);
+  font-size: clamp(7.4rem, 10vw, 10.4rem);
+  font-weight: 700;
+  margin-top: -1rem;
+}
+
+.workExperience__content {
+  display: flex;
+
+  gap: clamp(1.6rem, 2vw, 3.2rem);
+  padding-right: 1.6rem;
+}
+
+.workExperience__companyName {
+  color: var(--shopee-orange);
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 600;
+}
+
+.workExperience__jobTitle {
+  color: var(--white-color);
+  font-size: clamp(1.4rem, 4vw, 3rem);
+
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.workExperience__durationContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.workExperience__label {
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.workExperience__info {
+  color: var(--transparent-grey);
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.workExperience__contributionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.workExperience__contributionList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+@media (max-width: 300px) {
+  .workExperience__content {
+    flex-direction: column;
+  }
+}
