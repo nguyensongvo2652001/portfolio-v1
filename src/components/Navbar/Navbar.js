@@ -2,6 +2,7 @@ import { useState } from "react";
 import Backdrop from "../Backdrop/Backdrop";
 import classes from "./Navbar.module.css";
 import SmallNavbar from "./SmallNavbar/SmallNavbar";
+import SmallNavbarLogo from "../SmallNavbarLogo/SmallNavbarLogo";
 
 const Navbar = (props) => {
   const [showSmallNavbar, setShowSmallNavbar] = useState(false);
@@ -22,12 +23,12 @@ const Navbar = (props) => {
 
   return (
     <div className={classes.navbar__container}>
-      <div className={classes.navbar__smallNavIconContainer}>
+      <SmallNavbarLogo className={classes.navbar__smallNavIconContainer}>
         <ion-icon
           name="menu-outline"
           onClick={smallNavbarIconClickHandler}
         ></ion-icon>
-      </div>
+      </SmallNavbarLogo>
       {showSmallNavbar && (
         <SmallNavbar
           closeNavbar={closeNavbar}

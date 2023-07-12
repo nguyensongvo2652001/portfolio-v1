@@ -7,7 +7,7 @@
   width: 100%;
   background-color: var(--dark-blue);
   padding-top: 12rem;
-  padding-bottom: 12rem;
+  margin-bottom: 12rem;
 }
 
 .hero__textBox {

@@ -1,4 +1,5 @@
 import Backdrop from "../../Backdrop/Backdrop";
+import SmallNavbarLogo from "../../SmallNavbarLogo/SmallNavbarLogo";
 import classes from "./SmallNavbar.module.css";
 
 const SmallNavbar = (props) => {
@@ -6,7 +7,9 @@ const SmallNavbar = (props) => {
 
   return (
     <Backdrop className={classes.smallNavbar}>
-      <ion-icon name="close-outline" onClick={props.closeNavbar}></ion-icon>
+      <SmallNavbarLogo>
+        <ion-icon name="close-outline" onClick={props.closeNavbar}></ion-icon>
+      </SmallNavbarLogo>
       <ul className={classes.smallNavbar__elements}>
         {elements.map((element, index) => {
           return (

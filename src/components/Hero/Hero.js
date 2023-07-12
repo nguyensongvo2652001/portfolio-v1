@@ -6,14 +6,16 @@ import linkedinlogo from "../../assets/linkedinlogo.png";
 import Reveal from "../Reveal/Reveal";
 
 const Hero = (props) => {
-  const { elementRef, aboutMeRef } = props;
+  const { elementRef, aboutMeRef, className } = props;
 
   const scrollIntoAboutMeSection = () => {
     aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const containerClasses = `${classes.hero__container} ${className}`;
+
   return (
-    <div className={classes.hero__container} ref={elementRef}>
+    <div className={containerClasses} ref={elementRef}>
       <div className={classes.hero__textBox}>
         <Reveal>
           <h1 className={classes.hero__mainInfo}>I’m Võ Song Nguyên.</h1>

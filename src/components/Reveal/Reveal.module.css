@@ -1,7 +1,7 @@
 .reveal {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: fit-content;
 }
 
 .reveal__slide {

@@ -6,13 +6,15 @@
   height: fit-content;
   display: flex;
   justify-content: flex-end;
-  padding: 4rem 4rem 0 0;
+
+  z-index: 1;
 }
 
 .navbar__elements {
   display: flex;
   gap: 4.8rem;
   list-style: none;
+  padding: 4rem 4rem 4rem 0;
 }
 
 .navbar__link {
@@ -23,6 +25,8 @@
   font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__link:hover {
@@ -32,13 +36,6 @@
 .navbar__smallNavIconContainer {
   display: none;
   position: fixed;
-}
-
-.navbar__smallNavIconContainer ion-icon {
-  color: var(--white-color);
-  width: var(--small-navbar-logo-size);
-  height: var(--small-navbar-logo-size);
-  cursor: pointer;
 }
 
 @media (max-width: 700px) {

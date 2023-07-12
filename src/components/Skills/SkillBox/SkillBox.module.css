@@ -1,0 +1,32 @@
+.skillBox ion-icon {
+  color: var(--light-purple);
+  width: clamp(2.4rem, 2vw, 3.6rem);
+  height: clamp(2.4rem, 2vw, 3.6rem);
+  margin-bottom: 1.2rem;
+}
+
+.skillBox__title {
+  font-size: clamp(1.2rem, 1.5vw, 2.4rem);
+  color: var(--white-color);
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.skillBox__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 8px;
+  padding-right: 1.2rem;
+}
+
+.skillBox__skill {
+  font-size: 1.8rem;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-weight: 500;
+  color: var(--transparent-grey);
+}
+
+.skillBox__mainSkill {
+  color: var(--light-blue);
+}
