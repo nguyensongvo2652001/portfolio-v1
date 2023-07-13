@@ -1,0 +1,43 @@
+.footer {
+  background-color: var(--very-dark-blue);
+  display: flex;
+  padding-top: 2.4rem;
+  padding-bottom: 4.8rem;
+}
+
+.footer__name {
+  font-size: clamp(2.4rem, 3vw, 4.4rem);
+  color: var(--white-color);
+}
+
+.footer__email {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  color: var(--white-color);
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.footer__links {
+  width: 100%;
+  display: flex;
+  gap: 3.6rem;
+
+  list-style: none;
+  margin-bottom: 6.4rem;
+}
+
+.footer__link img {
+  width: clamp(2.4rem, 3vw, 4.4rem);
+}
+
+.footer__copyrightNote {
+  color: var(--transparent-grey);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.footer__createdNote {
+  color: var(--light-blue);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}

@@ -7,6 +7,7 @@ import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import MajorProjects from "./components/MajorProjects/MajorProjects";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const heroRef = useRef();
@@ -58,6 +59,8 @@ function App() {
       <MajorProjects elementRef={majorProjectsRef} />
 
       <Contact elementRef={contactFormRef} />
+
+      <Footer />
     </div>
   );
 }
