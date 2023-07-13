@@ -1,0 +1,110 @@
+.normalImagesCarousel__container {
+  position: relative;
+}
+
+.normalImagesCarousel {
+  display: flex;
+
+  gap: 1%;
+
+  margin-top: 3.2rem;
+  overflow: hidden;
+}
+
+.normalImagesCarousel__imageContainer {
+  flex-shrink: 0;
+  display: flex;
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.normalImagesCarousel__imageContainer img {
+  width: 100%;
+}
+
+.normalImagesCarousel__nextIconContainer,
+.normalImagesCarousel__prevIconContainer {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--light-purple);
+
+  position: absolute;
+
+  cursor: pointer;
+}
+
+.normalImagesCarousel__nextIconContainer {
+  right: 5%;
+  bottom: 40%;
+}
+
+.normalImagesCarousel__prevIconContainer {
+  left: 5%;
+  bottom: 40%;
+  margin-left: -2rem;
+}
+
+.normalImagesCarousel__nextIconContainer ion-icon,
+.normalImagesCarousel__prevIconContainer ion-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: var(--white-color);
+}
+
+@media (max-width: 800px) {
+  .normalImagesCarousel__imageContainer img {
+    width: 65%;
+  }
+
+  .normalImagesCarousel__nextIconContainer ion-icon,
+  .normalImagesCarousel__prevIconContainer ion-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .normalImagesCarousel__nextIconContainer {
+    right: 4%;
+    bottom: 40%;
+  }
+
+  .normalImagesCarousel__prevIconContainer {
+    left: 4%;
+    bottom: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .normalImagesCarousel__imageContainer {
+    justify-content: flex-start;
+  }
+
+  .normalImagesCarousel__imageContainer img {
+    width: 90%;
+  }
+
+  .normalImagesCarousel__nextIconContainer ion-icon,
+  .normalImagesCarousel__prevIconContainer ion-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .normalImagesCarousel__imageContainer {
+    width: 60%;
+  }
+
+  .normalImagesCarousel__imageContainer {
+    justify-content: flex-start;
+  }
+
+  .normalImagesCarousel__nextIconContainer ion-icon,
+  .normalImagesCarousel__prevIconContainer ion-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}

@@ -1,0 +1,23 @@
+.imageOverlay__imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageOverlay__image {
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .imageOverlay__image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .imageOverlay__image {
+    width: 95%;
+  }
+}

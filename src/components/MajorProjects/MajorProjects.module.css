@@ -1,0 +1,41 @@
+.majorProjects__container {
+  padding-bottom: 4.8rem;
+}
+
+.majorProjects__metaInfo {
+  color: var(--transparent-grey);
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.majorProjects__optionButtons {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 3.2rem;
+}
+
+.majorProjects__optionButton {
+  border: 3px solid var(--light-purple);
+  background: none;
+  color: var(--white-color);
+  font-family: inherit;
+  padding: 1rem 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.majorProjects__optionButton--active {
+  border: none;
+  background: var(--light-purple);
+  color: var(--white-color);
+  font-family: inherit;
+  padding: 1rem 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}

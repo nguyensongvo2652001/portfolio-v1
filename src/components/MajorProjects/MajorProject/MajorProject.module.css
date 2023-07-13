@@ -1,0 +1,55 @@
+.majorProject__description {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--transparent-grey);
+  font-weight: 500;
+  line-height: 2;
+  width: 95%;
+  margin-bottom: 2.4rem;
+}
+
+.majorProject__description span {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.majorProject__link:link,
+.majorProject__link:visited {
+  color: var(--white-color);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  text-decoration: none;
+  transition: all 0.3s;
+  padding-right: 1.2rem;
+}
+
+.majorProject__link:hover,
+.majorProject__link:active {
+  color: var(--light-blue);
+}
+
+.majorProject__liveWebsiteLinkContainer {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.2rem, 2vw, 2rem);
+}
+
+.majorProject__additionalInfo {
+  color: var(--light-blue);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 500;
+}
+
+.majorProject__imageCarouselInfo {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--white-color);
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 500px) {
+  .majorProject__liveWebsiteLinkContainer {
+    flex-direction: column;
+    align-items: normal;
+    gap: 0;
+  }
+}

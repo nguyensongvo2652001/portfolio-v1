@@ -5,12 +5,14 @@ import Navbar from "./components/Navbar/Navbar";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Skills from "./components/Skills/Skills";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
+import MajorProjects from "./components/MajorProjects/MajorProjects";
 
 function App() {
   const heroRef = useRef();
   const aboutMeRef = useRef();
   const skillsRef = useRef();
   const workExperienceRef = useRef();
+  const majorProjectsRef = useRef();
 
   const navbarElements = [
     {
@@ -31,7 +33,7 @@ function App() {
     },
     {
       text: "Projects",
-      elementRef: heroRef,
+      elementRef: majorProjectsRef,
     },
     {
       text: "Contact",
@@ -50,6 +52,8 @@ function App() {
       <Skills elementRef={skillsRef} />
 
       <WorkExperience elementRef={workExperienceRef} />
+
+      <MajorProjects elementRef={majorProjectsRef} />
     </div>
   );
 }
