@@ -64,7 +64,7 @@ const MajorProjects = (props) => {
   const algalysisInfo = {
     projectName: "Algalysis",
     projectDescriptionWithoutName:
-      " is a full-stack machine learning project designed to analyze algorithmic questions and provide users with valuable insights. It offers information on the complexity, difficulty level, recommended techniques, and related problems for each question.",
+      " is a machine learning powered full stack web application designed to analyze algorithmic questions and provide users with valuable insights. It offers information on the complexity, difficulty level, recommended techniques, and related problems for each question.",
     projectGithubLink: "https://github.com/nguyensongvo2652001/Algalysis",
     projectImages: algalysisImages,
     projectTechnologiesUsed:

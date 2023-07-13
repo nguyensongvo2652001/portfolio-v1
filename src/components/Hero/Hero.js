@@ -3,6 +3,7 @@ import classes from "./Hero.module.css";
 import githublogo from "../../assets/githublogo.png";
 import facebooklogo from "../../assets/facebooklogo.png";
 import linkedinlogo from "../../assets/linkedinlogo.png";
+import resume from "../../assets/01VoSongNguyenResume.pdf";
 import Reveal from "../Reveal/Reveal";
 
 const Hero = (props) => {
@@ -95,7 +96,7 @@ const Hero = (props) => {
             <div className={classes.hero__secondaryButtonContainer}>
               <a
                 className={`${classes.hero__secondaryButton} ${classes.hero__button}`}
-                href={linkedinlogo}
+                href={resume}
                 download
               >
                 Download my resume
