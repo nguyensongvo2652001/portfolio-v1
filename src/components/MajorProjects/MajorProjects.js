@@ -57,6 +57,8 @@ const MajorProjects = (props) => {
     projectLiveWebsiteAdditionalInfo:
       "Use user1@example.com as email and someThing2605! as password to login",
     projectImages: projectHubImages,
+    projectTechnologiesUsed:
+      "NodeJS, React, MongoDB, Redis, BackblazeB2, Prometheus, Grafana",
   };
 
   const algalysisInfo = {
@@ -65,6 +67,8 @@ const MajorProjects = (props) => {
       " is a full-stack machine learning project designed to analyze algorithmic questions and provide users with valuable insights. It offers information on the complexity, difficulty level, recommended techniques, and related problems for each question.",
     projectGithubLink: "https://github.com/nguyensongvo2652001/Algalysis",
     projectImages: algalysisImages,
+    projectTechnologiesUsed:
+      "NodeJS, React, Flask, MongoDB, Tensorflow, Google Colab",
   };
 
   const allProjects = [projectHubInfo, algalysisInfo];

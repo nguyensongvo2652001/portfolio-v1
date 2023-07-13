@@ -10,6 +10,7 @@ const MajorProject = (props) => {
     projectLiveWebsiteLink,
     projectLiveWebsiteAdditionalInfo,
     projectImages,
+    projectTechnologiesUsed,
   } = props;
 
   return (
@@ -17,6 +18,12 @@ const MajorProject = (props) => {
       <Reveal>
         <p className={classes.majorProject__description}>
           <span>{projectName}</span> {projectDescriptionWithoutName}
+        </p>
+      </Reveal>
+
+      <Reveal>
+        <p className={classes.majorProject__technologyUsed}>
+          Technologies used in this project: {projectTechnologiesUsed}
         </p>
       </Reveal>
 
