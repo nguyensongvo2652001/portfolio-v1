@@ -1,0 +1,46 @@
+.infoModal {
+  width: 30rem;
+  height: 25rem;
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.infoModal__title {
+  padding: 2rem;
+  color: var(--white-color);
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.infoModal__message {
+  padding: 2rem;
+  color: var(--white-color);
+  font-size: 1.4rem;
+}
+
+.infoModal__dismissButton {
+  width: 100%;
+  font-family: inherit;
+  background-color: var(--light-purple);
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  font-weight: 600;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.infoModal__dismissButton:hover {
+  background-color: var(--dark-purple);
+}
