@@ -1,4 +1,4 @@
 .contentPadding {
-  padding: 0 0 0 2.4rem;
+  padding-left: clamp(1.4rem, 2vw, 2.4rem);
   width: fit-content;
 }
