@@ -3,6 +3,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import classes from "./MajorProjects.module.css";
 import MajorProject from "./MajorProject/MajorProject";
 import ContentPadding from "../ContentPadding/ContentPadding";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 const MajorProjects = (props) => {
   const { elementRef } = props;
@@ -79,44 +80,49 @@ const MajorProjects = (props) => {
 
   return (
     <div className={classes.majorProjects__container} ref={elementRef}>
-      {!isLoadingImages && (
-        <ContentPadding>
-          <SectionTitle title="Major Projects" />
-          <p className={classes.majorProjects__metaInfo}>
-            Below are some of the noteworthy projects that I have completed.
-          </p>
-          <ul className={classes.majorProjects__optionButtons}>
-            {projectOptions.map((option, index) => {
-              const isActive = option === currentProjectName;
-              let buttonClass = `${classes.majorProjects__optionButton}`;
-              if (isActive) {
-                buttonClass = `${classes["majorProjects__optionButton--active"]}`;
-              }
-              return (
-                <li
-                  className={classes.majorProjects__optionButtonContainer}
-                  key={index}
-                >
-                  <button
-                    className={buttonClass}
-                    onClick={() => {
-                      setCurrentProjectName(option);
-                    }}
+      <ContentPadding>
+        <SectionTitle title="Major Projects" />
+        <p className={classes.majorProjects__metaInfo}>
+          Below are some of the noteworthy projects that I have completed.
+        </p>
+        {!isLoadingImages && (
+          <>
+            <ul className={classes.majorProjects__optionButtons}>
+              {projectOptions.map((option, index) => {
+                const isActive = option === currentProjectName;
+                let buttonClass = `${classes.majorProjects__optionButton}`;
+                if (isActive) {
+                  buttonClass = `${classes["majorProjects__optionButton--active"]}`;
+                }
+                return (
+                  <li
+                    className={classes.majorProjects__optionButtonContainer}
+                    key={index}
                   >
-                    {option}
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+                    <button
+                      className={buttonClass}
+                      onClick={() => {
+                        setCurrentProjectName(option);
+                      }}
+                    >
+                      {option}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
 
-          {allProjects.map((project) => {
-            if (project.projectName === currentProjectName) {
-              return <MajorProject {...project} />;
-            }
-          })}
-        </ContentPadding>
-      )}
+            {allProjects.map((project) => {
+              if (project.projectName === currentProjectName) {
+                return <MajorProject {...project} />;
+              }
+            })}
+          </>
+        )}
+        {isLoadingImages && (
+          <LoadingSpinner className={classes.majorProjects__loadingSpinner} />
+        )}
+      </ContentPadding>
     </div>
   );
 };

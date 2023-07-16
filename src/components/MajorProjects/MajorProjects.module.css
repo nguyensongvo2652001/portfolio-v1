@@ -39,3 +39,7 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+
+.majorProjects__loadingSpinner {
+  margin: auto;
+}
